@@ -1,0 +1,87 @@
+ FONTS */
+@font-face {
+	font-family: MyriadProBold;
+	src: url("../fonts/custom/MyriadPro-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: MyriadProLight;
+	src: url("../fonts/custom/MyriadPro-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: MyriadProRegular;
+	src: url("../fonts/custom/MyriadPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: MyriadProSemibold;
+	src: url("../fonts/custom/MyriadPro-Semibold.otf") format("opentype");
+}
+
+
+/* Top header with images */
+/*---------------------------------------------------------------------------------*/
+.custom-header{
+    padding-left:0;
+    padding-right:0;
+}
+
+.main_heading_group{
+	position: absolute;
+    color:white;
+    left:44%;
+    top:7.5vw;
+    /*width: 580px;*/
+    line-height: 3.3vw;
+}
+
+/*@media (min-width: 768px) {
+    body > div.custom-header.container-fluid > div > p.main_heading{
+    	font-size: 4em;
+    	top: 60px !important;
+    }
+}
+@media (min-width: 992px) {
+    body > div.custom-header.container-fluid > div > p.main_heading{
+    	font-size: 4.5em;
+    }
+}
+@media (min-width: 1200px) {
+    body > div.custom-header.container-fluid > div > p.main_heading{
+    	font-size: 5.5em;
+    	top: 70px !important;
+    }
+}
+@media (min-width: 1600px) {
+    body > div.custom-header.container-fluid > div > p.main_heading{
+    	font-size: 7em;
+    	top: 110px !important;
+    }
+}
+*/
+.main_heading_group .main_heading{
+	font-family:MyriadProSemibold;
+    font-size: 5.5vw;
+    display: block;
+}
+
+.main_heading_group .sub_heading_1{
+	font-family:MyriadProSemibold;
+    font-size: 2.8vw;
+    display: block;
+    margin-top: 14px;
+}
+
+.main_heading_group .sub_heading_2{
+	font-family:MyriadProLight;
+    font-size: 2.8vw;
+    display: block;
+}
+/*---------------------------------------------------------------------------------*/
+
+/* Main container of page*/
+/*---------------------------------------------------------------------------------*/
+
+.container{
+	background-color: gray;
+}
