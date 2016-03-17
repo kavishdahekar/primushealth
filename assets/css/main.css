@@ -1,4 +1,8 @@
- FONTS */
+ body{
+ 	/*background-color: #eee;*/
+ }
+
+ /*FONTS */
 @font-face {
 	font-family: MyriadProBold;
 	src: url("../fonts/custom/MyriadPro-Bold.otf") format("opentype");
@@ -24,6 +28,10 @@
 .custom-header{
     padding-left:0;
     padding-right:0;
+}
+
+.custom-header img{
+	padding:0px;
 }
 
 .main_heading_group{
@@ -83,5 +91,229 @@
 /*---------------------------------------------------------------------------------*/
 
 .container{
-	background-color: gray;
+	background-color: #fff;
+}
+
+.container .row{
+	/*overriding grid-framework property*/
+	margin-left: 0px; 
+}
+
+.container .first_panel{
+	margin-top: 15px;
+}
+
+.container .first_panel .top_panel_heading_1{
+	font-family: MyriadProSemibold;
+	color: #97c21c;
+	font-size: 3.5em;
+}
+.container .first_panel .top_panel_heading_2{
+	font-family: MyriadProRegular;
+	color: #97c21c;
+	font-size: 1.5em;
+	margin-top: -10px;
+}
+
+.separator{
+	width: 120px;
+    height: 6px;
+    background: #b9b7ba;
+    margin-top: 40px;
+}
+
+.container .first_panel .top_panel_content{
+	font-family: MyriadProRegular;
+	margin-top: 15px;
+	color: #ABABAB;
+	font-size: 1.6em;
+}
+
+.line_diagonal{
+	background: repeating-linear-gradient(
+		45deg,
+		#fff 10px,
+		#E0E0E0 16px
+	);
+	width: calc(100% + 30px);
+    height: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: -15px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Brands Panel */
+/*-------------------------------------------------------------------------------*/
+
+.panel_brands .top{
+	width: 70%;
+}
+.panel_brands .top h1{
+	font-family: MyriadProSemibold;
+	font-size: 5em;
+	color: #b9b7ba;
+}
+.panel_brands .top p{
+	font-family: MyriadProLight;
+    font-size: 2.5em;
+    color: #b9b7ba;
+    margin-top: -20px;
+}
+
+.bg_green{
+	background-color: #97c21c;
+}
+
+.panel_brands .bottom div:first-child{
+	color: #97c21c;
+	font-size: 1.4em;
+}
+
+.panel_brands .bottom img{
+	margin-top: 15px;
+	width: 100%;
+}
+
+.panel_brands .bottom .pull-down{
+	display: table-cell;
+	vertical-align: bottom;
+	float: none;
+}
+/*-------------------------------------------------------------------------------*/
+
+
+
+/* wenatex Panel */
+/*-------------------------------------------------------------------------------*/
+
+.col_full_width{
+	padding-left: 0px;
+	margin-left: -15px;
+}
+
+.panel_wenatex .row img{
+	width:calc(100% + 30px);
+}
+
+.panel_wenatex .row .top_header h1{
+	font-family: MyriadProSemibold;
+	color: #97c21c;
+	font-size: 3.5em;
+}
+.panel_wenatex .row .top_header p{
+	font-family: MyriadProRegular;
+	color: #97c21c;
+	font-size: 1.5em;
+	margin-top: -10px;
+}
+
+.panel_wenatex .row .bottom_content{
+	font-family: MyriadProRegular;
+	margin-top: 15px;
+	color: #ABABAB;
+	font-size: 1.2em;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+button{
+	font-family: MyriadProRegular;
+	background: none;
+	cursor: pointer;
+	background-color: #97c21c;
+	height: 56px;
+	color: #fff;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	font-size: 2em;
+	border: 3px solid #fff;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+/* begin Panel */
+/*-------------------------------------------------------------------------------*/
+
+.panel_begin{
+	margin-top: 30px;
+}
+
+.panel_begin .col_full_width{
+	background-color: #c6125f;
+	height: 450px;
+	width: calc(100% + 15px);
+}
+
+.panel_begin .col_full_width h1{
+	font-family: MyriadProSemibold;
+	color: #fff;
+	font-size: 5em;
+	margin-top: 100px;
+}
+
+
+.panel_begin_image img{
+	margin-top: 35px;
+	width: calc(100% + 30px);
+}
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+/* offer Panel */
+/*-------------------------------------------------------------------------------*/
+
+.panel_offer{
+	margin-top: 40px;
+}
+
+.panel_offer .left_offer{
+	background-color: #97c21c;
+}
+
+.panel_offer .left_offer h3, .panel_offer .right_offer h3{
+	color: #fff;
+	font-size: 3em;
+	font-family: MyriadProLight;
+}
+
+.panel_offer ul{
+	color: white;
+	font-size: 1.4em;
+	padding-left:0;
+}
+
+.panel_offer ul li{
+    display: block;
+    font-family: MyriadProLight;
+}
+.panel_offer ul li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    font-size: 14px;
+    float: left;
+    margin-top: 5px;
+    margin-left: -28px;
+    color: #fff;
+}
+
+.panel_offer .right_offer{
+	background-color: #b9b7ba;
+	margin-left: 15px;
+}
+
+.bg_white{
+	background-color: #fff;
 }
