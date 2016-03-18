@@ -178,18 +178,18 @@
 					<!-- Kontakdaten -->
 					<div class="col-sm-7 left_side">
 						<h4 class="heading">Kontakdaten</h4>
-						<form class="col-sm-12" style="padding-left:0px;">
+						<form class="col-sm-12" style="padding-left:0px;padding-right: 30px;">
 							
-							<div class="col-sm-3 radio_button gender">
+							<div class="col-sm-2 radio_button gender">
 									<div class="radio_circle pull-left herr"><div class="radio_circle_selected"></div></div>
 									<div class="radio_label pull-left">Herr</div>
 							</div>
-							<div class="col-sm-3 radio_button gender">
+							<div class="col-sm-2 radio_button gender">
 									<div class="radio_circle pull-left frau"></div>
 									<div class="radio_label pull-left">Frau</div>
 							</div>
 
-							<dir style="clear:left;margin-top: 30px;"></dir>
+							<dir style="clear:left;margin-top: 65px;"></dir>
 
 							<div class="col-sm-4 input_label">Vorname</div>
 							<div class="col-sm-8">
@@ -236,62 +236,67 @@
 
 					<!-- Anlagen -->
 					<div class="col-sm-5 right_side">
-						<h4>Anlagen</h4>
-						<p> Wenn Sie einen Lebenslauf, ein Foto o.ä. hinzufügen möchten, können Sie Ihre Anlagen hier hochladen. Klicken Sie dazu auf „Datei wählen“. Wir bitten Sie, nur Word-, PDF-, JPG-, TIF- und ZIP-Dateien hochzuladen.</p>						
-						<p>Anlagen beifügen (max. 2 MB):</p>
+						<div class="stay-up">
+							<h4>Anlagen</h4>
+							<p> Wenn Sie einen Lebenslauf, ein Foto o.ä. hinzufügen möchten, können Sie Ihre Anlagen hier hochladen. Klicken Sie dazu auf „Datei wählen“. Wir bitten Sie, nur Word-, PDF-, JPG-, TIF- und ZIP-Dateien hochzuladen.</p>						
+							<p>Anlagen beifügen (max. 2 MB):</p>
+						</div>
 
-						<p>Wie haben Sie von uns erfahren?</p>
+						<div class="pull-down">
+							<p style="font-family: MyriadProSemibold;">Wie haben Sie von uns erfahren?</p>
 
-						<div class="col-sm-12 radio_button poll">
-							<div class="col-sm-4 online">
-								<div class="radio_circle pull-left online"><div class="radio_circle_selected"></div></div>
-								<div class="radio_label pull-left">Online</div>
+							<div class="col-sm-12 radio_button poll">
+								<div class="col-sm-4 online">
+									<div class="radio_circle pull-left online"><div class="radio_circle_selected"></div></div>
+									<div class="radio_label pull-left">Online</div>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="pull-left">
+								</div>
 							</div>
-							<div class="col-sm-8">
-								<input type="text" class="pull-left">
+							<div class="col-sm-12 radio_button poll" >
+								<div class="col-sm-4 zeitung">
+									<div class="radio_circle pull-left zeitung"></div>
+									<div class="radio_label pull-left">Zeitung</div>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="pull-left">
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-12 radio_button poll" >
-							<div class="col-sm-4 zeitung">
-								<div class="radio_circle pull-left zeitung"></div>
-								<div class="radio_label pull-left">Zeitung</div>
+							<div class="col-sm-12 radio_button poll" style="height:55px;" >
+								<div class="col-sm-4 empfehlung">
+									<div class="radio_circle pull-left empfehlung"></div>
+									<div class="radio_label pull-left">Empfehlung</div>
+								</div>
+								<div class="col-sm-8">
+									
+								</div>
 							</div>
-							<div class="col-sm-8">
-								<input type="text" class="pull-left">
+							<div class="col-sm-12 radio_button poll" >
+								<div class="col-sm-4 sonstiges">
+									<div class="radio_circle pull-left sonstiges"></div>
+									<div class="radio_label pull-left">Sonstiges</div>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="pull-left">
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-12 radio_button poll" style="height:55px;" >
-							<div class="col-sm-4 empfehlung">
-								<div class="radio_circle pull-left empfehlung"></div>
-								<div class="radio_label pull-left">Empfehlung</div>
-							</div>
-							<div class="col-sm-8">
-								
-							</div>
-						</div>
-						<div class="col-sm-12 radio_button poll" >
-							<div class="col-sm-4 sonstiges">
-								<div class="radio_circle pull-left sonstiges"></div>
-								<div class="radio_label pull-left">Sonstiges</div>
-							</div>
-							<div class="col-sm-8">
-								<input type="text" class="pull-left">
-							</div>
+							<div style="clear:both;"></div>
 						</div>
 
 					</div>
 				</div>
 
 				<div class="row">
-					<h4>Nachricht</h4>
+					<h4 style="font-family: MyriadProSemibold;font-size: 1.6em;margin-top: 60px;margin-bottom:20px;">Nachricht</h4>
 					<textarea></textarea>
 					<div class="col-sm-12 radio_button confirm" >
-						<div class="radio_circle pull-left confirm"><div class="radio_circle_selected"></div></div>
+						<div class="radio_circle pull-left confirm"></div>
 						<div class="radio_label pull-left">Hiermit erkläre ich mich mit der Datenschutzvereinbarung einverstanden.</div>
 					</div>
 
-					<div class="col-xs-2 col-xs-offset-5">
-						<button>Absenden</button>
+					<div>
+						<button class="col-xs-2 col-xs-offset-5" style="margin-top:30px;height:60px; width: calc(16.66% + 60px);">Absenden</button>
 					</div>
 				</div>
 
@@ -318,6 +323,13 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript">
+
+		$( document ).ready(function() {
+			var mt = $('.panel_form .row .left_side').height() - ($('.panel_form .row .right_side .stay-up').height() + $('.panel_form .row .right_side .pull-down').height()) - 10;
+			$('.panel_form .row .right_side').height($('.panel_form .row .left_side').height());
+			$('.pull-down').css('margin-top',mt);
+		});
+
 		$('.radio_button.gender').on('click',function(e){
 			$('.radio_button.gender .radio_circle_selected').remove();
 			if($(e.currentTarget.children[0]).hasClass('herr')){
