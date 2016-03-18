@@ -1,8 +1,4 @@
- body{
- 	/*background-color: #eee;*/
- }
-
- /*FONTS */
+  /*FONTS */
 @font-face {
 	font-family: MyriadProBold;
 	src: url("../fonts/custom/MyriadPro-Bold.otf") format("opentype");
@@ -22,6 +18,12 @@
 	src: url("../fonts/custom/MyriadPro-Semibold.otf") format("opentype");
 }
 
+
+body{
+ 	/*background-color: #eee;*/
+ 	font-family: MyriadProRegular;
+ 	color: #b9b7ba;
+ }
 
 /* Top header with images */
 /*---------------------------------------------------------------------------------*/
@@ -223,11 +225,12 @@ button{
 	background: none;
 	cursor: pointer;
 	background-color: #97c21c;
-	height: 56px;
+	height: 80px;
+	min-height: 80px;
 	color: #fff;
 	border: none;
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 15px 0px 15px;
 	font-size: 2em;
 	border: 3px solid #fff;
 }
@@ -316,4 +319,116 @@ button{
 
 .bg_white{
 	background-color: #fff;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+/* form Panel */
+/*-------------------------------------------------------------------------------*/
+
+.panel_form h1{
+	color: #c6125f;
+	font-family: MyriadProRegular;
+}
+
+.panel_form .left_side .heading{
+	color: #B3B3B3;
+	font-family: MyriadProSemibold;
+	font-size: 1.3em;
+	margin-bottom: 26px;
+}
+
+.panel_form .input_label{
+	color:#c2c1c3;
+	font-family: MyriadProRegular;
+	font-size:1.5em;
+	padding-left:0px;
+}
+
+.panel_form input[type=text], .panel_form textarea{
+	background-color: #b9b7ba;
+	width: 100%;
+	height: 40px;
+	border: none;
+	margin-bottom: 15px;
+	color: #fff;
+	font-family: MyriadProRegular;
+	font-size: 2em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.panel_form input.plz{
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+}
+.panel_form input.ort{
+	width: 65%;
+}
+
+.radio_circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: #b9b7ba;
+	float: left;
+	cursor: pointer;
+}
+
+.radio_circle_selected{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	margin: auto;
+	position: relative;
+	top:25%;
+}
+
+.radio_button{
+	cursor: pointer;
+	padding-left: 0px;
+}
+
+.radio_label{
+	color: #b9b7ba;
+	font-family: MyriadProRegular;
+	font-size: 1.2em;
+	margin-left:20px;
+}
+
+.panel_form .right_side h4{
+	font-family: MyriadProBold;
+	color: #B3B3B3;
+}
+
+.panel_form .right_side p{
+	font-family: MyriadProRegular;
+	color: #c2c1c3;
+	font-size: 1em;
+}
+
+.panel_form .right_side .radio_button .col-sm-4{
+	padding-left: 0px;
+	padding-top: 10px;
+}
+
+.panel_form textarea{
+	width: calc(100% - 30px);
+	height: 200px;
+}
+
+
+.panel_footer{
+	margin-left: -15px;
+	width: calc(100% + 30px);
+	margin-bottom: 60px;
+}
+
+.panel_footer .impressum{
+	padding-left: 0px;
+	font-size: 1.3em;
 }
