@@ -37,12 +37,12 @@ body{
 }
 
 .main_heading_group{
-	position: absolute;
-    color:white;
-    left:44%;
-    top:7.5vw;
-    /*width: 580px;*/
-    line-height: 3.3vw;
+    position: absolute;
+    color: white;
+    left: 43%;
+    top: 8vw;
+    /* width: 580px; */
+    line-height: 3.0vw;
 }
 
 /*@media (min-width: 768px) {
@@ -70,21 +70,22 @@ body{
 }
 */
 .main_heading_group .main_heading{
-	font-family:MyriadProSemibold;
-    font-size: 5.5vw;
+	font-family: MyriadProSemibold;
+    font-size: 4.8vw;
     display: block;
 }
 
 .main_heading_group .sub_heading_1{
-	font-family:MyriadProSemibold;
-    font-size: 2.8vw;
+	font-family: MyriadProRegular;
+    font-size: 2.6vw;
     display: block;
     margin-top: 14px;
+    /* font-weight: lighter; */
 }
 
 .main_heading_group .sub_heading_2{
-	font-family:MyriadProLight;
-    font-size: 2.8vw;
+    font-family: MyriadProLight;
+    font-size: 2.4vw;
     display: block;
 }
 /*---------------------------------------------------------------------------------*/
@@ -102,13 +103,13 @@ body{
 }
 
 .container .first_panel{
-	margin-top: 15px;
+	margin-top: 50px;
 }
 
 .container .first_panel .top_panel_heading_1{
 	font-family: MyriadProSemibold;
 	color: #97c21c;
-	font-size: 3.5em;
+	font-size: 3em;
 }
 .container .first_panel .top_panel_heading_2{
 	font-family: MyriadProRegular;
@@ -118,17 +119,18 @@ body{
 }
 
 .separator{
-	width: 120px;
-    height: 6px;
-    background: #b9b7ba;
+	width: 90px;
+    height: 5px;
+    background: #ABABAB;
     margin-top: 40px;
 }
 
 .container .first_panel .top_panel_content{
-	font-family: MyriadProRegular;
-	margin-top: 15px;
-	color: #ABABAB;
-	font-size: 1.6em;
+    font-family: MyriadProLight;
+    margin-top: 15px;
+    color: #ABABAB;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .line_diagonal{
@@ -144,6 +146,14 @@ body{
     margin-left: -15px;
 }
 
+
+.first_panel .left_col .top_panel_content{
+	padding-right: 145px;
+}
+.first_panel .middle_col .top_panel_content, .first_panel .right_col .top_panel_content{
+    padding-right: 80px;
+}
+
 /*-------------------------------------------------------------------------------*/
 
 /* Brands Panel */
@@ -154,7 +164,7 @@ body{
 }
 .panel_brands .top h1{
 	font-family: MyriadProSemibold;
-	font-size: 5em;
+	font-size: 4.8em;
 	color: #b9b7ba;
 }
 .panel_brands .top p{
@@ -170,7 +180,8 @@ body{
 
 .panel_brands .bottom div:first-child{
 	color: #97c21c;
-	font-size: 1.4em;
+	font-size: 1.3em;
+	font-family: MyriadProRegular;
 }
 
 .panel_brands .bottom img{
@@ -182,6 +193,11 @@ body{
 	display: table-cell;
 	vertical-align: bottom;
 	float: none;
+}
+
+.panel_brands .bottom p{
+	margin-top: 12px;
+	padding-right: 100px;
 }
 /*-------------------------------------------------------------------------------*/
 
@@ -199,6 +215,10 @@ body{
 	width:calc(100% + 30px);
 }
 
+.panel_wenatex .top_header{
+	margin-top: 30px;
+}
+
 .panel_wenatex .row .top_header h1{
 	font-family: MyriadProSemibold;
 	color: #97c21c;
@@ -212,16 +232,16 @@ body{
 }
 
 .panel_wenatex .row .bottom_content{
-	font-family: MyriadProRegular;
-	margin-top: 15px;
-	color: #ABABAB;
-	font-size: 1.2em;
-	text-align: justify;
-	margin-bottom: 30px;
+    font-family: MyriadProRegular;
+    margin-top: 15px;
+    color: #ABABAB;
+    font-size: 1.5em;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 button{
-	font-family: MyriadProRegular;
+    font-family: MyriadProSemibold;
 	background: none;
 	cursor: pointer;
 	background-color: #97c21c;
@@ -256,12 +276,22 @@ button{
 }
 
 .panel_begin .col_full_width h1{
-	font-family: MyriadProSemibold;
-	color: #fff;
-	font-size: 5em;
-	margin-top: 100px;
+    font-family: MyriadProSemibold;
+    color: #fff;
+    font-size: 5em;
+    margin-bottom: 30px;
 }
 
+.panel_begin .row div:first-child{
+	display: table;
+    table-layout: fixed;
+}
+
+.panel_begin .row div:first-child div{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
 
 .panel_begin_image img{
 	margin-top: 35px;
@@ -283,18 +313,30 @@ button{
 
 .panel_offer .left_offer{
 	background-color: #97c21c;
+	width: calc(50% - 15px);
+	padding-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .panel_offer .left_offer h3, .panel_offer .right_offer h3{
 	color: #fff;
 	font-size: 3em;
 	font-family: MyriadProLight;
+	margin-top: 50px;
 }
 
 .panel_offer ul{
 	color: white;
 	font-size: 1.4em;
 	padding-left:0;
+	margin-left: 27px;
+	margin-top: 10px;
+}
+
+.panel_offer .left_offer div:first-child, .panel_offer .right_offer div:first-child{
+	width:70%;
+	position: relative;
+	margin:auto;	
 }
 
 .panel_offer ul li{
@@ -305,6 +347,7 @@ button{
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e013";
     font-family: 'Glyphicons Halflings';
+    font-weight: lighter;
     font-size: 14px;
     float: left;
     margin-top: 5px;
@@ -315,6 +358,9 @@ button{
 .panel_offer .right_offer{
 	background-color: #b9b7ba;
 	margin-left: 15px;
+	width: calc(50% - 15px);
+	padding-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .bg_white{
@@ -331,6 +377,14 @@ button{
 .panel_form h1{
 	color: #c6125f;
 	font-family: MyriadProRegular;
+}
+
+.panel_form .row .img_heading{
+	margin-bottom:30px;background-image: url('../img/form_header.png');background-repeat: no-repeat;background-size: 100% 100%;
+}
+
+.panel_form .row .img_heading img{
+	visibility: hidden; width: 100%;
 }
 
 .panel_form .left_side .heading{
