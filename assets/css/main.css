@@ -298,6 +298,13 @@ button{
 	width: calc(100% + 30px);
 }
 
+.panel_begin h1{
+	text-align: center;
+}
+.panel_begin button{
+	height: 100px;
+	font-size: 2.6em;	
+}
 
 
 /*-------------------------------------------------------------------------------*/
@@ -492,8 +499,108 @@ button{
 	font-size: 1.3em;
 }
 
-.pull-down{
-/*	display: table-cell;
-  vertical-align: bottom;
-  float: none;*/
+.submit{
+	margin-top:30px;
+	height:60px;
+	width: calc(16.66% + 60px);
+	margin-left: calc(41.66666667% - 30px);
+}
+
+/*BS 4*/
+/*@media(min-width:34em){}
+@media(min-width:48em){}
+@media(min-width:62em){}
+@media(min-width:75em){}*/
+
+@media (max-width: 62em) {
+	.separator{
+		margin-top: 10px;
+	}
+
+	.first_panel .top_panel_content{
+		margin-bottom: 20px;
+	}
+
+	.panel_begin .col_full_width h1{
+		font-size: 5vw;
+	}
+
+	.panel_begin button{
+		font-size: 3vw;
+		padding-top: 8px;
+	}
+
+	.panel_form .right_side h4{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 48em) {
+	.custom-header img{
+		width: 100%;
+	}
+
+	.main_heading_group{
+	    position: absolute;
+	    color: white;
+	    left: 43%;
+	    top: 8vw;
+	    line-height: 3.2vw;
+	}
+
+	.main_heading_group .main_heading{
+		font-family: MyriadProSemibold;
+	    font-size: 7vw;
+	    display: block;
+	}
+
+	.main_heading_group .sub_heading_1{
+		font-family: MyriadProRegular;
+	    font-size: 3vw;
+	    display: block;
+	    margin-top: 14px;
+	    /* font-weight: lighter; */
+	}
+
+	.main_heading_group .sub_heading_2{
+	    font-family: MyriadProLight;
+	    font-size: 3vw;
+	    display: block;
+	}
+
+	.container .first_panel .top_panel_heading_1{
+		font-size: 4.5vw;
+	}
+
+	.panel_brands .top {
+	    width: 100%;
+	}
+
+	.panel_brands .top h1{
+		font-size: 5vw;
+	}
+
+	.panel_brands .bottom .pull-down{
+		float: left;
+	}
+
+	.panel_offer .left_offer, .panel_offer .right_offer{
+		width: calc(100% - 30px);
+		margin-left: 5px;
+	}
+	.panel_offer .right_offer{
+		float: left !important;
+	}
+
+	.radio_button.poll .col-xs-4{
+		padding-top: 12px;
+	}
+
+	.panel_footer .row{
+		padding: 0px 20px 0px 20px;
+	}
+
+	.submit{
+		font-size: 4vw;
+	}
 }
