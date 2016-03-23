@@ -105,7 +105,7 @@
 
 					<div class="col-xs-12 top_header">
 						<h1>Das orthopädische Schlafsystem</h1>
-						<p>von Wenatex.</p>
+						<a target="_blank" href="http://www.wenatex.com/de"><p>von Wenatex.</p></a>
 					</div>
 
 					<div class="col-xs-12 separator" style="margin-left:15px;"></div>
@@ -113,11 +113,11 @@
 						Mit SilverMed® Deluxe geht Wenatex neue, innovative Wege im Bereich orthopädischer Schlafsysteme für einen erholsamen und gesunden Schlaf. Neueste Techniken wie der SMT-Schnitt in kneippscher Bachmurmelform, der Einsatz von wohltuenden Heilkräutern sowie die einzigartige Verwendung von Silber sorgen für einen hygienischen, ergonomischen Schlafkomfort auf höchstem Niveau.
 					</div>
 
-					<a href="http://www.wenatex.com/de">
+					<!-- <a href="http://www.wenatex.com/de">
 						<button class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-0">
 							MEHR ÜBER WENATEX
 						</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 
@@ -125,8 +125,8 @@
 				<div class="row">
 					<div class="col-xs-12 col_full_width">
 						<div>							
-							<h1 class="col-xs-6 col-xs-offset-3">Ihre Zukunft beginnt JETZT!</h1>
-							<button class="col-xs-8 col-xs-offset-2">
+							<h1 class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">Ihre Zukunft beginnt JETZT!</h1>
+							<button class="col-xs-8 col-xs-offset-2" id="scrollToForm">
 								Starten Sie Ihre Karriere bei PRIMUS HEALTH.
 							</button>
 						</div>
@@ -179,6 +179,7 @@
 			<div class="line_diagonal"></div>
 
 			<div class="panel_form">
+				<form action="http://p349335.mittwaldserver.info/primushealth_backend/jobservice.php" method="Post" enctype="multipart/form-data" onsubmit="return ValidateForm();">
 				<div class="row">
 					<div class="col-sm-12 img_heading">
 						<img src="assets/img/form_header.png" style="">
@@ -190,56 +191,65 @@
 						<h4 class="heading">Kontakdaten</h4>
 						<form class="col-sm-12" style="padding-left:0px;padding-right: 30px;">
 							
-							<div class="col-xs-3 col-md-2 radio_button gender">
+							<div class="col-xs-6 col-md-4 radio_button gender">
 									<div class="radio_circle pull-left herr"><div class="radio_circle_selected"></div></div>
 									<div class="radio_label pull-left">Herr</div>
 							</div>
-							<div class="col-xs-3 col-md-2 radio_button gender">
+							<div class="col-xs-6 col-md-4 radio_button gender">
 									<div class="radio_circle pull-left frau"></div>
 									<div class="radio_label pull-left">Frau</div>
 							</div>
 
+							<input type="hidden" id="salutation_code" name="salutation_code" value="Herr" />
 							<dir style="clear:left;margin-top: 65px;"></dir>
 
 							<div class="col-sm-4 input_label">Vorname</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<input type="text" name="first_name" id="first_name">
 							</div>
 
 							<div class="col-sm-4 input_label">Nachname</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<input type="text" name="last_name" id="last_name">
 							</div>
 
 							<div class="col-sm-4 input_label">Geburtstdatum</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<input type="text" name="birth_date" id="birth_date" placeholder="DD/MM/YYYY">
 							</div>
 
 							<div class="col-sm-4 input_label">Straße / Nr.</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<input type="text" name="street_address" id="street_address">
 							</div>
 
 							<div class="col-sm-4 input_label">PLZ / Ort</div>
-							<div class="col-sm-8">
-								<input type="text" class="plz">
-								<input type="text" class="ort">
+							<div class="col-sm-8 input_ele">
+								<input type="text" class="plz" name="postal_code" id="postal_code">
+								<input type="text" class="ort" name="town" id="town">
 							</div>
 
 							<div class="col-sm-4 input_label">Land</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<!-- <input type="text"> -->
+								<select class="form-control" style="height: 50px;" name="country" id="country">
+									<option value="">Land auswählen</option>
+									<option value="DE" >Deutschland</option>
+									<option value="AT" >Österreich</option>
+									<option value="IT" >Italien</option>
+									<option value="CH" >Schweiz</option>
+								</select>
+
 							</div>
 
 							<div class="col-sm-4 input_label">Telefon</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<input type="text" name="phone" id="phone">
 							</div>
 
 							<div class="col-sm-4 input_label">E-Mail</div>
-							<div class="col-sm-8">
-								<input type="text">
+							<div class="col-sm-8 input_ele">
+								<input type="text" name="email" id="email">
 							</div>
 						</form>
 					</div>
@@ -250,45 +260,133 @@
 							<h4>Anlagen</h4>
 							<p> Wenn Sie einen Lebenslauf, ein Foto o.ä. hinzufügen möchten, können Sie Ihre Anlagen hier hochladen. Klicken Sie dazu auf „Datei wählen“. Wir bitten Sie, nur Word-, PDF-, JPG-, TIF- und ZIP-Dateien hochzuladen.</p>						
 							<p>Anlagen beifügen (max. 2 MB):</p>
+							<label class="fileUpload">
+								<input type="file" name="file_name[]" id="file_name" multiple />
+								<span>Dateien auswählen</span>
+							</label>
 						</div>
 
 						<div class="pull-down">
 							<p style="font-family: MyriadProSemibold;">Wie haben Sie von uns erfahren?</p>
 
 							<div class="col-xs-12 radio_button poll">
-								<div class="col-xs-4 online">
+								<div class="col-xs-6 online">
 									<div class="radio_circle pull-left online"><div class="radio_circle_selected"></div></div>
 									<div class="radio_label pull-left">Online</div>
 								</div>
-								<div class="col-xs-8">
-									<input type="text" class="pull-left">
+								<div class="col-xs-6">
+									<!-- <input type="text" class="pull-left"> -->
+									<select class="form-control pull-left" name="online_heard_detail" id="online_heard_detail">
+										<option value="">-</option>
+										<option value="monster.de">monster.de</option>
+										<option value="stepstone.de">stepstone.de</option>
+										<option value="meinestadt.de">meinestadt.de</option>
+										<option value="backinjob.de">backinjob.de</option>
+										<option value="salesjob.de">salesjob.de</option>
+										<option value="sueddeutsche.de">sueddeutsche.de</option>
+										<option value="stellenanzeigen.de">stellenanzeigen.de</option>
+										<option value="Xing">Xing</option>
+										<option value="Google">Google</option>
+										<option value="Jobpilot">Jobpilot</option>
+										<option value="Jobrapido">Jobrapido</option>
+										<option value="Jobscout">Jobscout</option>
+										<option value="monster.at">monster.at</option>
+										<option value="stepstone.at">stepstone.at</option>
+										<option value="karriere.at">karriere.at</option>
+										<option value="regionaljobs.at">regionaljobs.at</option>
+									</select>
+
 								</div>
 							</div>
 							<div class="col-xs-12 radio_button poll" >
-								<div class="col-xs-4 zeitung">
+								<div class="col-xs-6 zeitung">
 									<div class="radio_circle pull-left zeitung"></div>
 									<div class="radio_label pull-left">Zeitung</div>
 								</div>
-								<div class="col-xs-8">
-									<input type="text" class="pull-left">
+								<div class="col-xs-6">
+									<!-- <input type="text" class="pull-left"> -->
+                                    <select class="form-control pull-left" name="newspaper_heard_detail" id="newspaper_heard_detail" disabled="">
+                                        <option value="">-</option>
+                                        <option value="Aachener Zeitung">Aachener Zeitung</option>
+                                        <option value="Augsburger Allgemeine">Augsburger Allgemeine</option>
+                                        <option value="Badische Zeitung">Badische Zeitung</option>
+                                        <option value="Bezirksblatt">Bezirksblatt</option>
+                                        <option value="BGL-Panorama &amp; Anzeigen Post">BGL-Panorama &amp; Anzeigen Post</option>
+                                        <option value="BILD">BILD</option>
+                                        <option value="Braunschweiger Zeitung">Braunschweiger Zeitung</option>
+                                        <option value="Bremer Nachrichten/Weser Kurier">Bremer Nachrichten/Weser Kurier</option>
+                                        <option value="Cellsche Zeitung">Cellsche Zeitung</option>
+                                        <option value="Die Woche">Die Woche</option>
+                                        <option value="Echo am Sonntag">Echo am Sonntag</option>
+                                        <option value="Frankenreport">Frankenreport</option>
+                                        <option value="Frankfurter Rundschau">Frankfurter Rundschau</option>
+                                        <option value="Freilassinger Anzeiger">Freilassinger Anzeiger</option>
+                                        <option value="Fuldaer Zeitung">Fuldaer Zeitung</option>
+                                        <option value="Hallo Sonntag">Hallo Sonntag</option>
+                                        <option value="Hamburger Abendblatt">Hamburger Abendblatt</option>
+                                        <option value="Hannoversche Allgemeine">Hannoversche Allgemeine</option>
+                                        <option value="Heilbronner Stimme">Heilbronner Stimme</option>
+                                        <option value="HNA">HNA</option>
+                                        <option value="Kleine Zeitung">Kleine Zeitung</option>
+                                        <option value="Kölner Stadt-Anzeiger">Kölner Stadt-Anzeiger</option>
+                                        <option value="Kronen Zeitung">Kronen Zeitung</option>
+                                        <option value="Kurier">Kurier</option>
+                                        <option value="Langenhagener/Wedemark Echo">Langenhagener/Wedemark Echo</option>
+                                        <option value="Linzer Rundschau">Linzer Rundschau</option>
+                                        <option value="Main Post">Main Post</option>
+                                        <option value="Marktspiegel Hannover">Marktspiegel Hannover</option>
+                                        <option value="Memminger Kurier">Memminger Kurier</option>
+                                        <option value="Mittelbayrische Zeitung">Mittelbayrische Zeitung</option>
+                                        <option value="Münchner Merkur">Münchner Merkur</option>
+                                        <option value="NOZ">NOZ</option>
+                                        <option value="Nürnberger Nachrichten">Nürnberger Nachrichten</option>
+                                        <option value="Oberbayrisches Volksblatt">Oberbayrisches Volksblatt</option>
+                                        <option value="Oberösterreichische Nachrichten">Oberösterreichische Nachrichten</option>
+                                        <option value="Oberösterreichische Rundschau">Oberösterreichische Rundschau</option>
+                                        <option value="Offenbach Post">Offenbach Post</option>
+                                        <option value="Österreich">Österreich</option>
+                                        <option value="Passauer Neue Presse">Passauer Neue Presse</option>
+                                        <option value="Reichenhaller Tagblatt">Reichenhaller Tagblatt</option>
+                                        <option value="Rhein Zeitung">Rhein Zeitung</option>
+                                        <option value="Rhein-Main Presse">Rhein-Main Presse</option>
+                                        <option value="Salzburger Fenster">Salzburger Fenster</option>
+                                        <option value="Salzburger Nachrichten">Salzburger Nachrichten</option>
+                                        <option value="Schwarzwälder Bote">Schwarzwälder Bote</option>
+                                        <option value="Siegener Zeitung">Siegener Zeitung</option>
+                                        <option value="Sonntagsblitz">Sonntagsblitz</option>
+                                        <option value="Süddeutsche Zeitung">Süddeutsche Zeitung</option>
+                                        <option value="Südwestpresse">Südwestpresse</option>
+                                        <option value="Tip Wochenblatt">Tip Wochenblatt</option>
+                                        <option value="Traunsteiner Tagblatt">Traunsteiner Tagblatt</option>
+                                        <option value="Trierscher Volksfreund">Trierscher Volksfreund</option>
+                                        <option value="Trostberger Tagblatt">Trostberger Tagblatt</option>
+                                        <option value="Ulmer Wochenblatt">Ulmer Wochenblatt</option>
+                                        <option value="Vorarlberger Nachrichten">Vorarlberger Nachrichten</option>
+                                        <option value="WAZ">WAZ</option>
+                                        <option value="Westfälisches Volksblatt">Westfälisches Volksblatt</option>
+                                        <option value="Wiesbadener Kurier">Wiesbadener Kurier</option>
+                                        <option value="Wochenblatt">Wochenblatt</option>
+                                        <option value="Zeitungsgruppe Nord">Zeitungsgruppe Nord</option>
+                                        <option value="Zeitungsgruppe Südostbayern">Zeitungsgruppe Südostbayern</option>
+                                    </select>
 								</div>
 							</div>
 							<div class="col-xs-12 radio_button poll" style="height:55px;" >
-								<div class="col-xs-4 empfehlung">
+								<div class="col-xs-6 empfehlung">
 									<div class="radio_circle pull-left empfehlung"></div>
 									<div class="radio_label pull-left">Empfehlung</div>
 								</div>
-								<div class="col-xs-8">
+								<div class="col-xs-6">
 									
 								</div>
 							</div>
 							<div class="col-xs-12 radio_button poll" >
-								<div class="col-xs-4 sonstiges">
+								<div class="col-xs-6 sonstiges">
 									<div class="radio_circle pull-left sonstiges"></div>
 									<div class="radio_label pull-left">Sonstiges</div>
 								</div>
-								<div class="col-xs-8">
-									<input type="text" class="pull-left">
+								<div class="col-xs-6">
+									<input type="text" class="pull-left" name="other_heard_detail">
 								</div>
 							</div>
 							<div style="clear:both;"></div>
@@ -297,12 +395,13 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<h4 style="font-family: MyriadProSemibold;font-size: 1.6em;margin-top: 60px;margin-bottom:20px;">Nachricht</h4>
-					<textarea></textarea>
+				<div class="row comments_tarea">
+					<input type="hidden" name="privacy_agree" id="privacy_agree" value="0" />
+					<h4>Nachricht</h4>
+					<textarea name="message" id="message"></textarea>
 					<div class="col-sm-12 radio_button confirm" >
 						<div class="radio_circle pull-left confirm"></div>
-						<div class="radio_label pull-left">Hiermit erkläre ich mich mit der Datenschutzvereinbarung einverstanden.</div>
+						<div class="radio_label">Hiermit erkläre ich mich mit der Datenschutzvereinbarung einverstanden.</div>
 					</div>
 
 					<div>
@@ -317,7 +416,7 @@
 			<div class="panel_footer">
 				<div class="row">
 				<div class="col-xs-2 impressum">
-					Impressum
+					<a href="imprint.html">Impressum</a>
 				</div>
 				<div class="col-xs-2"></div>
 				<div class="col-xs-4"></div>
@@ -331,6 +430,7 @@
 
 	<script type="text/javascript" src="assets/js/jquery-1.12.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/validation.js"></script>
 
 	<script type="text/javascript">
 
@@ -352,48 +452,97 @@
 		}
 
 		$( document ).ready(function() {
+
+			$('input[type=file]').on('change', prepareUpload);
+
 			if(findBootstrapEnvironment() == 'md' || findBootstrapEnvironment() == 'lg'){
 				var mt = $('.panel_form .row .left_side').height() - ($('.panel_form .row .right_side .stay-up').height() + $('.panel_form .row .right_side .pull-down').height()) - 10;
 				$('.panel_form .row .right_side').height($('.panel_form .row .left_side').height());
 				$('.pull-down').css('margin-top',mt);
 			}
 
-			if( $('.panel_offer .left_offer').height() > $('.panel_offer .right_offer').height() ){
-				$('.panel_offer .right_offer').height($('.panel_offer .left_offer').height());
-			}else{
-				$('.panel_offer .left_offer').height($('.panel_offer .right_offer').height());
+			if(findBootstrapEnvironment() != 'xs'){
+				if( $('.panel_offer .left_offer').height() > $('.panel_offer .right_offer').height() ){
+					$('.panel_offer .right_offer').height($('.panel_offer .left_offer').height());
+				}else{
+					$('.panel_offer .left_offer').height($('.panel_offer .right_offer').height());
+				}
 			}
+
+		});
+
+		$('#scrollToForm').on('click',function(){
+			$('html, body').animate({
+				scrollTop: $(".panel_form").offset().top-50
+			}, 1500, 'swing');
 		});
 
 		$('.radio_button.gender').on('click',function(e){
 			$('.radio_button.gender .radio_circle_selected').remove();
 			if($(e.currentTarget.children[0]).hasClass('herr')){
 				$('.radio_circle.herr').append('<div class="radio_circle_selected"></div>');
+				$("#salutation_code").val('Herr');
 			}else if($(e.currentTarget.children[0]).hasClass('frau')){
 				$('.radio_circle.frau').append('<div class="radio_circle_selected"></div>');
+				$("#salutation_code").val('Frau');
 			}
 		});
 
-		$('.radio_button.poll').on('click',function(e){
-			$('.radio_button.poll .radio_circle_selected').remove();
-			if($(e.currentTarget.children[0]).hasClass('online')){
-				$('.radio_circle.online').append('<div class="radio_circle_selected"></div>');
-			}else if($(e.currentTarget.children[0]).hasClass('zeitung')){
-				$('.radio_circle.zeitung').append('<div class="radio_circle_selected"></div>');
-			}else if($(e.currentTarget.children[0]).hasClass('empfehlung')){
-				$('.radio_circle.empfehlung').append('<div class="radio_circle_selected"></div>');
-			}else if($(e.currentTarget.children[0]).hasClass('sonstiges')){
-				$('.radio_circle.sonstiges').append('<div class="radio_circle_selected"></div>');
+		// $('.radio_button.poll').on('click',function(e){
+		// 	$('.radio_button.poll .radio_circle_selected').remove();
+		// 	if($(e.currentTarget.children[0]).hasClass('online')){
+		// 		$('.radio_circle.online').append('<div class="radio_circle_selected"></div>');
+		// 	}else if($(e.currentTarget.children[0]).hasClass('zeitung')){
+		// 		$('.radio_circle.zeitung').append('<div class="radio_circle_selected"></div>');
+		// 	}else if($(e.currentTarget.children[0]).hasClass('empfehlung')){
+		// 		$('.radio_circle.empfehlung').append('<div class="radio_circle_selected"></div>');
+		// 	}else if($(e.currentTarget.children[0]).hasClass('sonstiges')){
+		// 		$('.radio_circle.sonstiges').append('<div class="radio_circle_selected"></div>');
+		// 	}
+		// });
+        $('.radio_button.poll').on('click', function(e) {
+            $('.radio_button.poll .radio_circle_selected').remove();
+            if ($(e.currentTarget.children[0]).hasClass('online')) {
+                $('.radio_circle.online').append('<div class="radio_circle_selected"></div>');
+                $("#heard_about_us").val('online');
+                $("#online_heard_detail").prop("disabled", false);
+                $('#newspaper_heard_detail').prop("disabled", true);
+            } else if ($(e.currentTarget.children[0]).hasClass('zeitung')) {
+                $('.radio_circle.zeitung').append('<div class="radio_circle_selected"></div>');
+                $("#heard_about_us").val('newspaper');
+                $("#online_heard_detail").prop("disabled", true);
+                $('#newspaper_heard_detail').prop("disabled", false);
+            } else if ($(e.currentTarget.children[0]).hasClass('empfehlung')) {
+                $('.radio_circle.empfehlung').append('<div class="radio_circle_selected"></div>');
+                $("#heard_about_us").val('recommendation');
+                $("#online_heard_detail").prop("disabled", true);
+                $('#newspaper_heard_detail').prop("disabled", true);
+            } else if ($(e.currentTarget.children[0]).hasClass('sonstiges')) {
+                $('.radio_circle.sonstiges').append('<div class="radio_circle_selected"></div>');
+                $("#heard_about_us").val('other');
+                $("#online_heard_detail").prop("disabled", true);
+                $('#newspaper_heard_detail').prop("disabled", true);
+            }
+        });
+
+
+		// $('.radio_button.confirm').on('click',function(e){
+		// 	if($($($('.radio_button.confirm').children()[0]).children()).hasClass('radio_circle_selected')){
+		// 		$('.radio_button.confirm .radio_circle_selected').remove();
+		// 	}else{
+		// 		$('.radio_button.confirm .radio_circle.confirm').append('<div class="radio_circle_selected"></div>');
+		// 	}
+		// });
+		$('.radio_button.confirm').on('click', function(e) {
+			if ($($($('.radio_button.confirm').children()[0]).children()).hasClass('radio_circle_selected')) {
+			    $('.radio_button.confirm .radio_circle_selected').remove();
+			    $("#privacy_agree").val('0');
+			} else {
+			    $('.radio_button.confirm .radio_circle.confirm').append('<div class="radio_circle_selected"></div>');
+			    $("#privacy_agree").val('1');
 			}
 		});
 
-		$('.radio_button.confirm').on('click',function(e){
-			if($($($('.radio_button.confirm').children()[0]).children()).hasClass('radio_circle_selected')){
-				$('.radio_button.confirm .radio_circle_selected').remove();
-			}else{
-				$('.radio_button.confirm .radio_circle.confirm').append('<div class="radio_circle_selected"></div>');
-			}
-		});
 	</script>
 </body>
 </html>
